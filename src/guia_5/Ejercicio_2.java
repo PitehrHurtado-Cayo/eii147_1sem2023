@@ -1,8 +1,6 @@
 package guia_5;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.Arrays;
 
 public class Ejercicio_2 {
