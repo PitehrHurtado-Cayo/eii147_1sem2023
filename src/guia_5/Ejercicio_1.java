@@ -10,6 +10,11 @@ public class Ejercicio_1 {
     array con valores unicos = [1,2,3,4,5....]
      */
     public static void main(String [] arg) {
+        /*
+        IDEA DE SOLUCION
+        crear dos arreglos, 1) int unicos, 2) T o F si son o no duplicados
+        la cantida dde duplicados sera solo los valores T
+         */
 
         int [] arreglo_unicos = new int[plibre];
         boolean [] duplicados = new boolean[plibre];
@@ -20,8 +25,8 @@ public class Ejercicio_1 {
 
             for(int j =0; j< plibre_arreglo_unicos; j++){
                 if(array[i] == arreglo_unicos[j]) {
-                    esta = true;
-                    duplicados[j] = true;
+                    esta = true; // si ya se encuentra en el arreglo, entonces el valor esta duplicado
+                    duplicados[j] = true; // cambia el estado de duplicado a True
                 }
             }
             if(!esta){
