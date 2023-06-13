@@ -54,6 +54,14 @@ public class Barco {
         return false; // no esta agregado
     }
 
+    public boolean agregarProducto(Producto nuevo, int codigo){
+        // buscar container
+        for(int i = 0; i< plibre; i++){
+            if(containers[i].getCodigo() == codigo)
+                return containers[i].agregarProducto(nuevo);
+        }
+        return false; // no encontro al container
+    }
     public int cantidadProductosFragil(String destino){
         // destino esta en arreglo de destinos?
         if(estaEnDestinos(destino) == false)
